@@ -1,0 +1,78 @@
+#editor {
+  max-width: 800px;
+  width: 90%;
+  height: 600px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 0 auto;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  font-family: monospace;
+  font-size: 14px;
+  color: #444;
+  overflow-y: auto;
+}
+
+#editor .indent-error {
+  background-color: #ffd7d7;
+  border-left: 4px solid #ff9999;
+}
+
+#run-button, #clear-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#run-button {
+  background-color: #87CEEB;
+  color: #fff;
+}
+
+#clear-button {
+  background-color: #ccc;
+  color: #333;
+  margin-left: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin: 10px auto;
+}
+
+#output {
+  padding: 10px;
+  border: 1px solid #ddd;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  #editor {
+    height: 400px;
+  }
+  #output {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  #editor {
+    height: 300px;
+  }
+  #output {
+    height: 150px;
+  }
+  #run-button, #clear-button {
+    padding: 5px 10px;
+  }
+}
