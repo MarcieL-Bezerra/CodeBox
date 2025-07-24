@@ -45,3 +45,5 @@
 - Lançamento inicial do projeto suporte a Linguagem Python.
 - Implementação das funcionalidades básicas.
 - Suporte a Docker.
+# V1.1.0:
+- Adicionado suporte a Linguagem Java.

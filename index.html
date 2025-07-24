@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Compilador Online de Python</title>
+  <title>Compilador Online</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.min.css">
 </head>
 <body>
-  <h2>>Compilador Online de Python</h2>
-  <div id="editor" contenteditable="true"></div>
+  <h2>Compilador Online 
+    <select id="language-select">
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+    </select>
+  </h2>
+  <textarea id="editor"></textarea>
   <div class="button-container">
     <button id="run-button">Executar</button>
     <button id="clear-button">Limpar</button>
   </div>
   <h2>SAÍDA</h2>
   <div id="output"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/mode/clike/clike.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/addon/hint/show-hint.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/addon/hint/python-hint.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

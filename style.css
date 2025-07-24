@@ -1,24 +1,17 @@
-#editor {
+.CodeMirror {
   max-width: 800px;
   width: 90%;
   height: 600px;
   border: 1px solid #ddd;
-  padding: 10px;
   margin: 0 auto;
-  white-space: pre-wrap;
-  background-color: #f5f5f5;
-  font-family: monospace;
   font-size: 14px;
-  color: #444;
+}
+
+.CodeMirror-scroll {
   overflow-y: auto;
 }
 
-#editor .indent-error {
-  background-color: #ffd7d7;
-  border-left: 4px solid #ff9999;
-}
-
-#run-button, #clear-button {
+#run-button, #clear-button, #language-select {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -31,6 +24,12 @@
 }
 
 #clear-button {
+  background-color: #ccc;
+  color: #333;
+  margin-left: 10px;
+}
+
+#language-select {
   background-color: #ccc;
   color: #333;
   margin-left: 10px;
@@ -57,7 +56,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  #editor {
+  .CodeMirror {
     height: 400px;
   }
   #output {
@@ -66,13 +65,13 @@ h2 {
 }
 
 @media (max-width: 480px) {
-  #editor {
+  .CodeMirror {
     height: 300px;
   }
   #output {
     height: 150px;
   }
-  #run-button, #clear-button {
+  #run-button, #clear-button, #language-select {
     padding: 5px 10px;
   }
 }
