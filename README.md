@@ -10,7 +10,7 @@
 
 ### Sobre o Projeto
 
-- O CodeBox é uma aplicação web que emula um copilador python para execução de códigos direto no navegador.
+- O CodeBox é uma aplicação web que emula um copilador para execução de códigos direto no navegador.
 
 ### Requisitos
 
